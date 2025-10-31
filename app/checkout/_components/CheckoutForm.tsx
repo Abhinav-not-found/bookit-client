@@ -13,7 +13,7 @@ const CheckoutForm = () => {
   const handleApplyPromo = async () => {
     setLoading(true)
     try {
-      const res = await fetch("http://localhost:8000/promo/validate", {
+      const res = await fetch("https://bookit-server-vysj.onrender.com/promo/validate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code }),
